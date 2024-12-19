@@ -1,6 +1,14 @@
 # UNHCR Wrapper
 This is a wrapper for the UNHCR API. It is written in Python and uses the requests library to make HTTP requests to the API.
 
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install py-unhcr
+```
+
 ## Usage
 To use the wrapper, you need to import the `UNHCR` class and create an instance of it. You can then use the methods provided by the class to interact
 with the API. Here is an example:
