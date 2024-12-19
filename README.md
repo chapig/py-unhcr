@@ -22,7 +22,7 @@ unhcr = UNHCR()
 data = unhcr.set_filter(coo="AFG", year=2020).asylum_applications(dataframe=True)
 ```
 
-# Using ´@dataframe´ decorator
+# Using `@dataframe` decorator
 The `@dataframe` decorator can be used to automatically convert the response data to a pandas DataFrame. Here is an example:
 
 ```python       
