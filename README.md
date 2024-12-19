@@ -12,7 +12,7 @@ from unhcr_wrapper import UNHCR
 unhcr = UNHCR()
 
 # Get asylum applicants from Afghanistan in 2020 and return the data as a DataFrame
-data = unhcr.set_filter(coo="AFG", year=2020).asylum_applications(dataframe=True)
+data = unhcr.set_filter(coo="AFG", year_from=2020).asylum_applications(dataframe=True)
 ```
 
 # Using `@dataframe` decorator
