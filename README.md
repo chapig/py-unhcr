@@ -80,4 +80,3 @@ This would output a line plot showing the total number of applications over the 
 
 # This is a WIP
 This project is a work in progress and more features will be added in the future. If you have any suggestions or feedback, feel free to open an issue or submit a pull request.
-```
