@@ -22,6 +22,22 @@ unhcr = UNHCR()
 data = unhcr.set_filter(coo="AFG", year=2020).asylum_applications(dataframe=True)
 ```
 
+# Using ´@dataframe´ decorator
+The `@dataframe` decorator can be used to automatically convert the response data to a pandas DataFrame. Here is an example:
+
+```python       
+from unhcr_wrapper import UNHCR, dataframe
+
+unhcr_client = UNHCR()
+
+@dataframe
+def get_data():
+    data = unhcr_client.set_filter(coo="VEN", year_from=2021).asylum_applications()
+    return data
+
+data = get_data()
+```
+
 # How to plot data
 To plot the data, you can use matplotlib. Here is an example:
 
