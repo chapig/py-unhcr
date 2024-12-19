@@ -6,7 +6,7 @@ To use the wrapper, you need to import the `UNHCR` class and create an instance 
 with the API. Here is an example:
 
 ```python
-from src.unhcr_wrapper import UNHCR
+from py_unhcr import UNHCR
 
 # Create an instance of the UNHCR class
 unhcr = UNHCR()
@@ -19,7 +19,7 @@ data = unhcr.set_filter(coo="AFG", year_from=2020).asylum_applications(dataframe
 The `@dataframe` decorator can be used to automatically convert the response data to a pandas DataFrame. Here is an example:
 
 ```python       
-from src.unhcr_wrapper import UNHCR, dataframe
+from py_unhcr import UNHCR, dataframe
 
 unhcr_client = UNHCR()
 
@@ -38,8 +38,9 @@ To plot the data, you can use matplotlib. Here is an example:
 
 ```python
 import matplotlib.pyplot as plt
-from src.unhcr_wrapper import UNHCR
+from py_unhcr import UNHCR
 
+unhcr_client = UNHCR()
 unhcr = unhcr_client.set_filter(coo="VEN", year_from=2000, year_to=2024, coa_all=True).asylum_applications(
     dataframe=True)
 
