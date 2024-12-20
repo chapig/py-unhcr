@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "py-unhcr"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
   { name="Luis Alfredo Chaparro Gomez", email="luis@chapi.dev" },
 ]
