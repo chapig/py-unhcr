@@ -9,12 +9,7 @@ sphinx:
   configuration: docs/conf.py
 
 python:
-  install:
-    - method: pip
-      path: .
-    - requirements: docs/requirements.txt
-
-formats:
-  - htmlzip
-  - pdf
-  - epub
+   install:
+      - requirements: docs/requirements.txt
+      - method: pip
+        path: .
