@@ -1,0 +1,20 @@
+# .readthedocs.yaml
+
+version: 2
+
+# Build documentation in the "docs" directory
+sphinx:
+  configuration: docs/conf.py
+
+# Use a Python environment for building
+python:
+  version: "3.9"
+  install:
+    - method: pip
+      path: .
+    - requirements: docs/requirements.txt
+
+# Optional: Redirect documentation index
+redirects:
+  - from: /
+    to: /en/latest/
